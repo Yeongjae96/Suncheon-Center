@@ -1,12 +1,25 @@
 <template>
   <div>
-    Hi
+    <global-navigation-bar />
     <nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {};
+import GlobalNavigationBar from './parts/GlobalNavigationBar.vue'
+import Footer from './parts/Footer.vue'
+export default {
+  name: 'Default',
+  components: {
+    GlobalNavigationBar,
+    Footer,
+  }
+};
 </script>
 
-<style></style>
+<style>
+  #header {
+    background-image: url("~/assets/images/header.jpg");
+  }
+</style>

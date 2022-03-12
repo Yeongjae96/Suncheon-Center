@@ -33,14 +33,18 @@ module.exports = {
     "space-before-blocks": ["error", "always"],
     "no-empty": "error",
     "no-duplicate-imports": "error",
-    "vue/multi-word-component-names": [
-      "error",
-      {
-        ignores: ["default"],
-      },
-    ],
     "eol-last": 0,
     "no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0 }],
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "vue/no-unused-components": "warn",
+    "quote-props": 0,
   },
+  overrides: [
+    {
+      files: ['**/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 0,
+      },
+    },
+  ],
 };
