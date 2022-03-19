@@ -8,6 +8,7 @@
         <p>{{ subtitle }}</p> -->
       </header>
       <footer>
+        <!-- 나중에 이미지로 바꾸든 색깔을 둘수 있든 여러가지를 선택할수 있게 바꿈 -->
         <a href="#banner" class="button circled scrolly">센터 소개</a>
         <a href="#banner" class="button circled scrolly">게시판</a>
         <a href="#banner" class="button circled scrolly">정 보</a>
@@ -50,22 +51,22 @@ export default {
 
     & .inner {
       width: 100%;
-      & *:not(:last-child) {
-        margin-bottom: 30px;
-      }
+      // & *:not(:last-child) {
+      //   margin-bottom: 30px;
+      // }
 
-      & footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        width: 100%;
-        bottom: 10px;
-        & *:not(:last-child) {
-          margin-right: 15px;
-        }
-      }
+      // & footer {
+      //   display: flex;
+      //   flex-direction: row;
+      //   align-items: center;
+      //   justify-content: center;
+      //   position: absolute;
+      //   width: 100%;
+      //   bottom: 10px;
+      //   & *:not(:last-child) {
+      //     margin-right: 15px;
+      //   }
+      // }
     }
   }
 </style>

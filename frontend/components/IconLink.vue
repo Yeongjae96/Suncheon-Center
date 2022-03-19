@@ -21,6 +21,10 @@ export default {
       default: '',
       required: false,
     },
+    type: {
+      type: String,
+      default: ''
+    }
   },
 }
 </script>

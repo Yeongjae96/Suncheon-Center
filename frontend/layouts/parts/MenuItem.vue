@@ -4,7 +4,10 @@
     @mouseleave="onMouseLeave"
   >
     <NuxtLink
-      :to="url"
+      :to="url || '#'"
+      :class="{
+        'active': isMouseEnter
+      }"
     >
       {{ title }}
     </NuxtLink>

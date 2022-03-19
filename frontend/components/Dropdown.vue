@@ -1,6 +1,6 @@
 <template>
   <ul
-    class="dropdown"
+    class="dropotron level-0 center"
     @click="onItemClick"
   >
     <li
@@ -36,10 +36,4 @@ export default {
 </script>
 
 <style scoped>
-
-  ul > li {
-    position: relative;
-    top: 50px;
-  }
-
 </style>

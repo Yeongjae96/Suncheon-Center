@@ -44,6 +44,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  ul > * {
+    color: #333;
+    font-weight: bold;
+  }
 </style>
