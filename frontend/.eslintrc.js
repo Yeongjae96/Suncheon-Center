@@ -38,6 +38,7 @@ module.exports = {
     "no-unused-vars": "warn",
     "vue/no-unused-components": "warn",
     "quote-props": 0,
+    "space-before-function-paren": 0,
   },
   overrides: [
     {

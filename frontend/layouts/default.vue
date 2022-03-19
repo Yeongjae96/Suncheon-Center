@@ -19,7 +19,4 @@ export default {
 </script>
 
 <style>
-  #header {
-    background-image: url("~/assets/images/header.jpg");
-  }
 </style>

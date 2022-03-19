@@ -3,50 +3,69 @@
     <!-- Inner -->
     <div class="inner">
       <header>
-        <h1><a href="index.html" id="logo">Helios</a></h1>
-        <hr />
-        <p>Another fine freebie by HTML5 UP</p>
+        <!-- <h1><a id="logo" href="index.html">{{ title }}</a></h1>
+        <hr>
+        <p>{{ subtitle }}</p> -->
       </header>
       <footer>
-        <a href="#banner" class="button circled scrolly">Start</a>
+        <a href="#banner" class="button circled scrolly">센터 소개</a>
+        <a href="#banner" class="button circled scrolly">게시판</a>
+        <a href="#banner" class="button circled scrolly">정 보</a>
+        <a href="#banner" class="button circled scrolly">프로그램</a>
+        <a href="#banner" class="button circled scrolly">식단표</a>
       </footer>
     </div>
     <!-- Nav -->
     <nav id="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="#">Dropdown</a>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Magna phasellus</a></li>
-            <li><a href="#">Etiam dolore nisl</a></li>
-            <li>
-              <a href="#">And a submenu &hellip;</a>
-              <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Phasellus consequat</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Veroeros feugiat</a></li>
-          </ul>
-        </li>
-        <li><a href="left-sidebar.html">Left Sidebar</a></li>
-        <li><a href="right-sidebar.html">Right Sidebar</a></li>
-        <li><a href="no-sidebar.html">No Sidebar</a></li>
-      </ul>
+      <menu-item-list />
     </nav>
 </div>
 </template>
 
 <script>
+import MenuItemList from './MenuItemList';
 export default {
   name: 'GlobalNavigationBar',
+  components: {
+    MenuItemList,
+  },
+  data() {
+    return {
+      subtitle: '예시제목'
+    };
+  },
+  created() {},
+  mounted() {
+    this.title = '은빛사랑채 노인복지센터'
+    this.subtitle = '예시 서브타이틀'
+  }
 }
 </script>
 
-<style>
+<style lang="scss">
+  #header {
+    background-image: url("~/assets/images/backtop.png");
+    height: 600px;
+    position: relative;
 
+    & .inner {
+      width: 100%;
+      & *:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      & footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        & *:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
 </style>
