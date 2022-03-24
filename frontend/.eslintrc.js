@@ -39,6 +39,9 @@ module.exports = {
     "vue/no-unused-components": "warn",
     "quote-props": 0,
     "space-before-function-paren": 0,
+    "vue/singleline-html-element-content-newline": 0,
+    "vue/component-definition-name-casing": 0,
+    "require-await": 0,
   },
   overrides: [
     {

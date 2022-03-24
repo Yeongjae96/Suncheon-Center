@@ -19,8 +19,8 @@
       <!-- v-for="(child) in children" -->
       <template #default="child">
         <menu-item
+          :id="child.id"
           :key="child.id"
-          class="child"
           :url="child.url"
           :title="child.title"
           :children="child.children"
@@ -81,8 +81,7 @@ export default {
 </script>
 
 <style scoped>
-  li > .child {
-    width: 100px;
-    height: 100px;
+  li > *:not(:last-child) {
+    padding-bottom: 30px;
   }
 </style>

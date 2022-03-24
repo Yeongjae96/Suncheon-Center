@@ -43,7 +43,6 @@ export default {
   methods: {},
 }
 </script>
-
 <style scoped lang="scss">
   ul > * {
     color: #333;

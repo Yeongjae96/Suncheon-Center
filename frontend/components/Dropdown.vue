@@ -1,27 +1,22 @@
 <template>
-  <ul
-    class="dropotron level-0 center"
-    @click="onItemClick"
-  >
-    <li
-      v-for="item in item"
-      :key="item.id"
+  <transition name="fade">
+    <ul
+      class="dropotron level-0 center"
+      @click="onItemClick"
     >
-      <slot :child="item">
-        {{ child.value }}
-      </slot>
-    </li>
-  </ul>
+      <template
+        v-for="item in items"
+      >
+        <slot name="default" v-bind="item" />
+      </template>
+    </ul>
+  </transition>
 </template>
 
 <script>
 export default {
   name: 'Dropdown',
   props: {
-    value: {
-      type: String,
-      required: true,
-    },
     items: {
       type: Array,
       default: () => [],

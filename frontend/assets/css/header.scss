@@ -75,6 +75,13 @@
       display: flex;  
       align-items: center;
       justify-content: center;
-      transform: translateX(-2em);
+      // transform: translateX(-2em);
     }
   }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
