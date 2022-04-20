@@ -51,22 +51,6 @@ export default {
 
     & .inner {
       width: 100%;
-      // & *:not(:last-child) {
-      //   margin-bottom: 30px;
-      // }
-
-      // & footer {
-      //   display: flex;
-      //   flex-direction: row;
-      //   align-items: center;
-      //   justify-content: center;
-      //   position: absolute;
-      //   width: 100%;
-      //   bottom: 10px;
-      //   & *:not(:last-child) {
-      //     margin-right: 15px;
-      //   }
-      // }
     }
   }
 </style>

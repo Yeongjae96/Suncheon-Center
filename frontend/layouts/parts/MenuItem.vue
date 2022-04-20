@@ -82,6 +82,6 @@ export default {
 
 <style scoped>
   li > *:not(:last-child) {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
 </style>

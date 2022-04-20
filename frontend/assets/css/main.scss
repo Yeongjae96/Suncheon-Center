@@ -2220,6 +2220,7 @@ input, select, textarea {
 		z-index: 1;
 		overflow: hidden;
 		min-height: 200px;
+		height: 100%;
 	}
 
 		#nav > ul {
@@ -2294,7 +2295,7 @@ input, select, textarea {
 		list-style: none;
 		position: absolute;
 		left: 0px;
-		// transform: translateX(-15%);
+		transform: translateX(-15%);
 		z-index: 1;
 	}
 
@@ -2332,7 +2333,7 @@ input, select, textarea {
 				position: absolute;
 				left: 50%;
 				top: -0.7em;
-				margin-left: -1.5em;
+				margin-left: -0.75em;
 				border-bottom: solid 0.75em rgba(255, 255, 255, 0.975);
 				border-left: solid 0.75em rgba(64, 64, 64, 0);
 				border-right: solid 0.75em rgba(64, 64, 64, 0);

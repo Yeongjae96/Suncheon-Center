@@ -31,12 +31,27 @@ export default {
             id: 'M001002',
             url: '/Main/1',
             title: '서브메인페이지'
-          }
+          },
+          {
+            id: 'M001003',
+            url: '/Main/1',
+            title: '서브메인페이지'
+          },
+          {
+            id: 'M001004',
+            url: '/Main/1',
+            title: '서브메인페이지'
+          },
+          {
+            id: 'M001005',
+            url: '/Main/1',
+            title: '서브메인페이지'
+          },
         ]
       },
-      { id: 'M002', url: '/Notice', title: '공지사항' },
+      { id: 'M002', url: '/Board/Notice', title: '공지사항' },
       { id: 'M003', url: '/About', title: '소개페이지' },
-      { id: 'M004', url: '/Board', title: '게시판' },
+      { id: 'M004', url: '/Board/Yerin', title: '게시판' },
     ];
   },
   mounted() {},

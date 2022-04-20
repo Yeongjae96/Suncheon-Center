@@ -42,6 +42,10 @@ module.exports = {
     "vue/singleline-html-element-content-newline": 0,
     "vue/component-definition-name-casing": 0,
     "require-await": 0,
+    'vue/multi-word-component-names': 0,
+    "no-trailing-spaces": 0,
+    "padded-blocks": 0,
+    "eqeqeq": 0,
   },
   overrides: [
     {
